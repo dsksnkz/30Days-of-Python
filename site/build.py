@@ -34,3 +34,7 @@ head = '<!doctype html>\n<html lang="en">\n<meta charset="utf-8">\n<meta name="v
 Path("docs").mkdir(exist_ok=True)
 Path("docs/.nojekyll").touch()
 Path("docs/index.html").write_text(head + html)
+
+# Also publish at the repo root, so the site works whether Pages serves /docs or / (root).
+Path(".nojekyll").touch()
+Path("index.html").write_text(head + html)
