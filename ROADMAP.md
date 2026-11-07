@@ -62,13 +62,13 @@ except ValueError:
 **Day 18: The standard library.** Learn `datetime`, `collections` (`Counter`, `defaultdict`), `itertools`, `os`, `sys.argv` and `argparse`.
 **Build:** a command-line tool: `python count.py file.txt --top 5` prints the five most common words.
 
-**Day 19: Virtual environments and pip.** Learn `python -m venv`, `pip install`, `pip freeze > requirements.txt`, and why Arch blocks system-wide installs. See [SETUP.md](SETUP.md).
+**Day 19: Virtual environments and pip.** Learn `python -m venv`, `pip install`, `pip freeze > requirements.txt`, and why each project gets its own environment. See [SETUP.md](SETUP.md).
 **Build:** install `rich` in a venv, and print a coloured table of your library's books.
 
 **Day 20: Dataclasses, typing and iterators.** Learn `@dataclass`, type hints with `list[str]` and `str | None`, generators with `yield`, and running `mypy` to check types.
 **Build:** rewrite `Book` as a dataclass. Write a generator that reads a big file one line at a time.
 
-**Day 21: Project: expense tracker.** Add, list and delete expenses, with totals per category and per month. Save to JSON and load it on startup. Close the program, reopen it, and check that the data is still there. This is also a good time to build your rewards tracker.
+**Day 21: Project: expense tracker.** Add, list and delete expenses, with totals per category and per month. Save to JSON and load it on startup. Close the program, reopen it, and check that the data is still there.
 
 ## Week 4: Professional tools
 
@@ -99,4 +99,4 @@ except ValueError:
 
 **Day 30: Ship it.** Add logging and settings from environment variables, write a good README, and push it to GitHub.
 
-**That's the course. Claim your Day 30 prize!**
+**That's the course. Well done!**

@@ -14,6 +14,16 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
 
 Unlike C#, Python finds most errors only **when that line runs**. Code in an `if` branch you never take can hide a bug, so test every path.
 
+## Setup problems
+
+| Message | Fix |
+|---|---|
+| `'python' is not recognized as an internal or external command` (Windows) | Python isn't on PATH. Reinstall and tick **Add python.exe to PATH**, or use `py` |
+| Typing `python` opens the Microsoft Store (Windows) | Install from python.org, or use `py` |
+| `command not found: python` (macOS, Linux) | Use `python3` |
+| `can't open file 'lesson.py': No such file or directory` | You're in the wrong folder. `cd` into the folder with the file |
+| `running scripts is disabled on this system` (PowerShell) | Run `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned` once |
+
 ## Errors before anything runs
 
 | Error | What it usually means | Fix |
@@ -40,9 +50,9 @@ Unlike C#, Python finds most errors only **when that line runs**. Code in an `if
 | `KeyError: 'Sam'` | A dict has no such key | Check with `in`, or use `.get()` |
 | `AttributeError: 'str' object has no attribute 'push'` | The method doesn't exist for that type | Check the name: lists use `append` |
 | `ZeroDivisionError: division by zero` | Dividing by 0 | Check before dividing |
-| `ModuleNotFoundError: No module named 'requests'` | The package isn't installed, or your venv isn't active | `source .venv/bin/activate`, then `pip install` |
+| `ModuleNotFoundError: No module named 'requests'` | The package isn't installed, or your venv isn't active | Activate the venv (see [SETUP.md](SETUP.md)), then `pip install` |
 | `RecursionError: maximum recursion depth exceeded` | A function calls itself forever | Add a stopping case |
-| `error: externally-managed-environment` | `pip install` outside a venv on Arch | Use a venv. See [SETUP.md](SETUP.md) |
+| `error: externally-managed-environment` | `pip install` outside a venv on some Linux systems | Use a venv. See [SETUP.md](SETUP.md) |
 
 ## Runs but gives the wrong answer
 

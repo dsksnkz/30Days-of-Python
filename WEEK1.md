@@ -499,4 +499,4 @@ No new topics today. You're combining everything, without a walkthrough.
 - Ask whether to play again.
 - Make it multiple choice. Only allow 1–4, and ask again for anything else. Hint: `.isdigit()`.
 
-**Well done: that's Week 1. Check [REWARDS.md](REWARDS.md) for your milestone reward.**
+**Well done: that's Week 1.**

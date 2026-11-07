@@ -8,11 +8,10 @@ A 30-day Python course, built to work with no AI help. Plan on 1–2 hours a day
 
 | File | What it's for |
 |---|---|
-| [SETUP.md](SETUP.md) | Start here: install Python on Arch and run your first file |
+| [SETUP.md](SETUP.md) | Start here: install Python on Windows, macOS or Linux, and run your first file |
 | [WEEK1.md](WEEK1.md) | Full lessons for Days 1–7 |
 | [ROADMAP.md](ROADMAP.md) | Goals, key ideas and exercises for Days 8–30 |
 | [ERRORS.md](ERRORS.md) | What common Python errors mean and how to fix them |
-| [REWARDS.md](REWARDS.md) | Points and rewards |
 | [ONLINE.md](ONLINE.md) | Running Python in a browser |
 | [prompt.md](prompt.md) | A tutor prompt that gives hints, never answers |
 | [my-code/](my-code/) | The code you write, one folder per day |
@@ -31,11 +30,16 @@ Work through these in order:
 
 ## Starting each day
 
+Make a folder for the day inside `my-code`, open it in your editor, and run your file from a terminal in that folder:
+
 ```bash
-mkdir -p ~/30Days-of-python/my-code/Day01 && cd ~/30Days-of-python/my-code/Day01
-nvim lesson.py      # or any editor
+cd my-code
+mkdir Day01
+cd Day01
 python lesson.py
 ```
+
+These commands work in Windows PowerShell, macOS and Linux. On macOS and some Linux systems, type `python3` instead of `python`.
 
 No project files and no compiling: a `.py` file is the whole program.
 
@@ -46,20 +50,21 @@ No project files and no compiling: a `.py` file is the whole program.
 3. **Test:** run every test value, especially the boundaries.
 4. **Break it (10 min):** change something, read the error, and fix it.
 5. **Answer the check-yourself questions** from memory.
-6. **Log it:** add your points in [REWARDS.md](REWARDS.md).
 
 ## Saving your work
 
 From the repo folder:
 
 ```bash
-git add . && git commit -m "Finish Day 1" && git push
+git add .
+git commit -m "Finish Day 1"
+git push
 ```
 
 To get this repo on another computer:
 
 ```bash
-gh repo clone dsksnkz/30Days-of-python
+git clone https://github.com/dsksnkz/30Days-of-python
 ```
 
 ## The plan
